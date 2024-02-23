@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,84 @@
       rel="stylesheet"
       type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color1: "#87B700",
+              color2: "#000000",
+              color3: "#495057",
+              color4: "#212121",
+              color5: "#E6E8EB",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
-  <body>
+  <body class="max-w-screen-xl mx-auto">
     <!-- header section start -->
-    <header></header>
+    <header>
+      <!-- Navbar -->
+      <section>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start flex-row-reverse lg:flex-row justify-between lg:justify-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl font-semibold text-color4 left-[-90px]" >
+                <li><a>Home</a></li>
+                <li><a>Menu</a></li>
+                <li><a>Reservation</a></li>
+                <li><a>Events</a></li>
+                <li><a>Contacts </a></li>
+              </ul>
+            </div>
+            <a
+              class="cursor-pointer text-xl md:text-3xl libra font-bold hover:bg-white text-color4"
+              ><span class="text-color1">Ember</span> Grille</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-xl font-semibold text-color4 space-x-7">
+              <li><a class="hover:bg-white">Home</a></li>
+              <li><a class="hover:bg-white">Menu</a></li>
+              <li><a class="hover:bg-white">Reservation</a></li>
+              <li><a class="hover:bg-white">Events</a></li>
+              <li><a class="hover:bg-white">Contacts </a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-7">
+            <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+            <img
+              src="./assets/images/Vector.png"
+              class="cursor-pointer"
+              alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
     <!-- header section end -->
 
     <!-- main section start -->
