@@ -18,3 +18,8 @@ body {
 .libra {
   font-family: "Libre Baskerville", serif;
 }
+
+/* Extra CSS */
+.box-shadow {
+  box-shadow: 8px 8px 13px 0px rgba(0, 0, 0, 0.15) !important;
+}
