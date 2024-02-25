@@ -95,7 +95,10 @@
                 src="./assets/images/Vector1.svg"
                 class="cursor-pointer"
                 alt="" />
-                <sup class="bg-color1 text-white font-semibold text-xs rounded-full w-4 h-4 flex items-center justify-center">0</sup>
+              <sup
+                class="bg-color1 text-white font-semibold text-xs rounded-full w-4 h-4 flex items-center justify-center"
+                >0</sup
+              >
             </div>
           </div>
         </div>
@@ -126,7 +129,7 @@
     <!-- header section end -->
 
     <!-- main section start -->
-    <main class="mt-5 lg:my-40">
+    <main class="mt-5 lg:mt-40 lg:mb-20">
       <!-- about us section -->
       <section class="max-w-screen-xl mx-auto p-5 lg:p-0">
         <div class="flex flex-col">
@@ -782,7 +785,39 @@
     <!-- main section end -->
 
     <!-- footer section start -->
-    <footer></footer>
+    <footer>
+      <!-- newsletter section -->
+      <section
+        class="hero h-[540px]"
+        style="background-image: url(./assets/images/newsletter.png)">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="text-center">
+            <h1 class="mb-4 text-4xl libra font-bold text-white">
+              Join Us For Food Update
+            </h1>
+            <p class="mb-12 text-white font-medium text-lg">
+              Stay connected with us for exciting food updates! Be the first to
+              know about our new menu <span class="inline lg:block"></span> additions, chef specials, and upcoming
+              events. Join our community for delicious experiences.
+            </p>
+            <div id="input-field" class="relative">
+              <input
+                id="coupon-code"
+                type="text"
+                name=""
+                placeholder="Enter your email"
+                id=""
+                class="text-lg py-4 text-white bg-inherit border-2 border-white rounded-full pl-5 focus:outline-none w-full md:w-[55%]" />
+              <input
+                type="submit"
+                class="btn hover:bg-white text-xl text-color4 font-semibold bg-color bg-white px-4 rounded-full absolute right-2 top-2 md:right-[174px] lg:right-[183px] md:top-[8px] lg:top-[7px]"
+                value="Subscribe" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!-- footer section start -->
     <!-- JavaScript -->
     <script src="./scripts/resturant-script.js"></script>
