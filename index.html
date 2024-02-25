@@ -37,6 +37,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Toast -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.min.js"></script>
   </head>
   <body class="">
     <!-- header section start -->
@@ -83,7 +88,9 @@
               class="menu menu-horizontal px-1 text-xl font-semibold text-color4 space-x-7 lg:ml-32">
               <li><a href="#hero" class="hover:bg-white">Home</a></li>
               <li><a href="#menu" class="hover:bg-white">Menu</a></li>
-              <li><a href="#reservation" class="hover:bg-white">Reservation</a></li>
+              <li>
+                <a href="#reservation" class="hover:bg-white">Reservation</a>
+              </li>
               <li><a href="#events" class="hover:bg-white">Events</a></li>
               <li><a href="#footer" class="hover:bg-white">Contacts </a></li>
             </ul>
@@ -220,6 +227,7 @@
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$9.99</h4>
                   <div
+                    onclick="pushNotify()"
                     class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
@@ -246,6 +254,7 @@
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$7.00</h4>
                   <div
+                    onclick="pushNotify()"
                     class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
@@ -272,6 +281,7 @@
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$6.99</h4>
                   <div
+                    onclick="pushNotify()"
                     class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
@@ -296,6 +306,7 @@
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$8.00</h4>
                   <div
+                    onclick="pushNotify()"
                     class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
@@ -322,6 +333,7 @@
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$10.00</h4>
                   <div
+                    onclick="pushNotify()"
                     class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
@@ -351,6 +363,7 @@
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$5.00</h4>
                   <div
+                    onclick="pushNotify()"
                     class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
@@ -727,7 +740,9 @@
         </div>
       </section>
       <!-- upcoming events section -->
-      <section id="events" class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
+      <section
+        id="events"
+        class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
         <div class="max-w-screen-xl mx-auto">
           <h3 class="text-4xl font-bold libra text-color4 text-center">
             Upcoming <span class="text-color1">Events</span>
@@ -856,7 +871,8 @@
         </div>
       </section>
       <!-- footer -->
-      <section id="footer"
+      <section
+        id="footer"
         class="bg-[#0D1201] max-w-screen-2xl mx-auto p-5 md:p-10 lg:p-20">
         <div class="footer max-w-screen-xl mx-auto">
           <aside class="text-white">
