@@ -425,7 +425,7 @@
             </div>
             <div class="md:space-x-5">
               <button
-                class="bg-color1 text-white mt-10 text-xl font-semibold hover:bg-color1 box-shadow px-7 py-4 rounded-xl border-2 border-color1">
+                class="bg-color1 text-white mt-10 text-xl font-semibold hover:bg-color1 px-7 py-4 rounded-xl border-2 border-color1">
                 Contact Him
               </button>
               <button
@@ -482,6 +482,123 @@
               src="./assets/images/food3.png"
               class="w-full h-full lg:h-[520px] transition ease-in-out delay-150 duration-1000 cursor-pointer hover:-translate-y-1 hover:scale-110"
               alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- reservation section -->
+      <section class="mt-5 lg:mt-20 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
+        <div class="max-w-screen-xl mx-auto">
+          <h3 class="libra font-bold text-4xl text-color4 text-center">
+            Reservation
+          </h3>
+          <p class="text-lg text-color3 font-medium text-center mt-4">
+            Reserve your spot at Ember Grille and prepare to savor exceptional
+            cuisine in an elegant ambiance.
+            <span class="inline lg:block"></span> Whether it's a cool dinner for
+            two or a gathering with friends, we're here to ensure every moment
+            <span class="inline lg:block"></span>
+            is memorable. Book your table now and let us elevate your dining
+            experience.
+          </p>
+          <div class="mt-8 flex flex-col lg:flex-row gap-20">
+            <div>
+              <img
+                src="./assets/images/reservation-img.png"
+                class="w-full"
+                alt="" />
+            </div>
+            <div class="w-full lg:w-1/2">
+              <form action="" class="space-y-4">
+                <div class="flex flex-col md:flex-row justify-between gap-5">
+                  <div class="w-full">
+                    <label
+                      for="date"
+                      class="block text-lg font-semibold text-color4 mb-2 w-full"
+                      >Date<sup class="text-[#FF0000]">*</sup>
+                    </label>
+                    <input
+                      type="date"
+                      name=""
+                      id="date"
+                      required
+                      class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4" />
+                  </div>
+                  <div class="w-full">
+                    <label
+                      for="time"
+                      class="block text-lg font-semibold text-color4 mb-2 w-full"
+                      >Time<sup class="text-[#FF0000]">*</sup></label
+                    >
+                    <input
+                      type="time"
+                      name=""
+                      id="time"
+                      required
+                      class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4" />
+                  </div>
+                  <div class="w-full">
+                    <label
+                      for="person"
+                      class="block text-lg font-semibold text-color4 mb-2 w-full"
+                      >Person<sup class="text-[#FF0000]">*</sup></label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      id="person"
+                      placeholder="5 persons"
+                      required
+                      class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4" />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="name"
+                    class="block text-lg font-semibold text-color4 mb-2"
+                    >Your Name<sup class="text-[#FF0000]">*</sup></label
+                  >
+                  <input
+                    type="text"
+                    name=""
+                    id="name"
+                    placeholder="Smith"
+                    required
+                    class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4" />
+                </div>
+                <div>
+                  <label
+                    for="number"
+                    class="block text-lg font-semibold text-color4 mb-2"
+                    >Phone Number<sup class="text-[#FF0000]">*</sup></label
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    id="number"
+                    placeholder="+0123-456-789"
+                    required
+                    class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4" />
+                </div>
+                <div>
+                  <label
+                    for="comments"
+                    class="block text-lg font-semibold text-color4 mb-2"
+                    >Additional Comments</label
+                  >
+                  <textarea
+                    name=""
+                    id="comments"
+                    cols="30"
+                    rows="5"
+                    placeholder="Enter your message"
+                    class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4"></textarea>
+                  <input
+                    type="submit"
+                    value="Book A Table"
+                    class="bg-color1 text-white mt-5 text-xl font-semibold hover:bg-color1 px-7 py-4 rounded-xl border-2 border-color1 cursor-pointer" />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
