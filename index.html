@@ -96,6 +96,7 @@
                 class="cursor-pointer"
                 alt="" />
               <sup
+                id="increase-count"
                 class="bg-color1 text-white font-semibold text-xs rounded-full w-4 h-4 flex items-center justify-center"
                 >0</sup
               >
@@ -117,10 +118,11 @@
                 Embark on a gastronomic adventure like no other, where spices
                 mingle, aromas entice, and flavors captivate.
               </p>
-              <button
+              <a
+                href="#reservation"
                 class="btn bg-color1 text-white mt-10 text-xl font-semibold hover:bg-color1 box-shadow border-none">
                 Reserve Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -217,7 +219,8 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$9.99</h4>
-                  <div class="bg-color1 px-4 py-3 rounded-xl cursor-pointer">
+                  <div
+                    class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
                 </div>
@@ -242,7 +245,8 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$7.00</h4>
-                  <div class="bg-color1 px-4 py-3 rounded-xl cursor-pointer">
+                  <div
+                    class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
                 </div>
@@ -267,7 +271,8 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$6.99</h4>
-                  <div class="bg-color1 px-4 py-3 rounded-xl cursor-pointer">
+                  <div
+                    class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
                 </div>
@@ -290,7 +295,8 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$8.00</h4>
-                  <div class="bg-color1 px-4 py-3 rounded-xl cursor-pointer">
+                  <div
+                    class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
                 </div>
@@ -315,7 +321,8 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$10.00</h4>
-                  <div class="bg-color1 px-4 py-3 rounded-xl cursor-pointer">
+                  <div
+                    class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
                 </div>
@@ -343,7 +350,8 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <h4 class="text-color4 text-2xl font-bold">$5.00</h4>
-                  <div class="bg-color1 px-4 py-3 rounded-xl cursor-pointer">
+                  <div
+                    class="bg-color1 px-4 py-3 rounded-xl cursor-pointer add-cart">
                     <i class="fa-solid fa-plus text-white"></i>
                   </div>
                 </div>
@@ -413,7 +421,7 @@
               class="flex flex-col md:flex-row justify-between my-10 gap-5 w-full lg:w-[90%]">
               <div class="space-y-5 flex flex-col items-center">
                 <p class="text-lg font-bold text-color4">Passion for Cooking</p>
-                <div
+                <div 
                   class="bg-white rounded-3xl w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl flex items-center justify-center">
                   <span>90%</span>
                 </div>
@@ -422,7 +430,7 @@
                 <p class="text-lg font-bold text-color4">Leadership Skills</p>
                 <div
                   class="bg-white rounded-3xl flex items-center justify-center w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl">
-                  <span>80%</span>
+                  <span >80%</span>
                 </div>
               </div>
               <div class="space-y-5 flex flex-col items-center">
@@ -497,7 +505,9 @@
         </div>
       </section>
       <!-- reservation section -->
-      <section class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
+      <section
+        id="reservation"
+        class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
         <div class="max-w-screen-xl mx-auto">
           <h3 class="libra font-bold text-4xl text-color4 text-center">
             Reservation
