@@ -26,12 +26,27 @@ body {
 .box-shadow2 {
   box-shadow: 1px 16px 31px -4px rgba(0, 0, 0, 0.25);
 }
-.bg-linear-gradient {
+.bg-linear-gradient1 {
   background: linear-gradient(
     270deg,
     rgba(14, 1, 0, 0.33),
     rgb(137, 130, 119) 102.348%,
     rgba(255, 255, 255, 0) 102.358%
+  );
+}
+.bg-linear-gradient2 {
+  background: linear-gradient(
+    270deg,
+    rgb(15, 17, 12),
+    rgba(15, 17, 12, 0.33) 0.01%,
+    rgba(160, 153, 153, 0.81) 100%
+  );
+}
+.bg-linear-gradient3 {
+  background: linear-gradient(
+    270deg,
+    rgba(16, 30, 14, 0.77),
+    rgba(130, 151, 115, 0.68) 100%
   );
 }
 .event1-border-radius {

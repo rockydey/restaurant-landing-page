@@ -66,11 +66,11 @@
               <ul
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl font-semibold text-color4">
-                <li><a>Home</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Reservation</a></li>
-                <li><a>Events</a></li>
-                <li><a>Contacts </a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#footer">Contacts </a></li>
               </ul>
             </div>
             <a
@@ -81,11 +81,11 @@
           <div class="navbar-center hidden lg:flex">
             <ul
               class="menu menu-horizontal px-1 text-xl font-semibold text-color4 space-x-7 lg:ml-32">
-              <li><a class="hover:bg-white">Home</a></li>
-              <li><a class="hover:bg-white">Menu</a></li>
-              <li><a class="hover:bg-white">Reservation</a></li>
-              <li><a class="hover:bg-white">Events</a></li>
-              <li><a class="hover:bg-white">Contacts </a></li>
+              <li><a href="/" class="hover:bg-white">Home</a></li>
+              <li><a href="#menu" class="hover:bg-white">Menu</a></li>
+              <li><a href="#reservation" class="hover:bg-white">Reservation</a></li>
+              <li><a href="#events" class="hover:bg-white">Events</a></li>
+              <li><a href="#footer" class="hover:bg-white">Contacts </a></li>
             </ul>
           </div>
           <div class="navbar-end space-x-7">
@@ -179,7 +179,7 @@
         </div>
       </section>
       <!-- our menu section -->
-      <section class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
+      <section id="menu" class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
         <div class="max-w-screen-xl mx-auto">
           <h3 class="text-3xl font-bold text-color4 libra text-center">
             Our Menu
@@ -421,7 +421,7 @@
               class="flex flex-col md:flex-row justify-between my-10 gap-5 w-full lg:w-[90%]">
               <div class="space-y-5 flex flex-col items-center">
                 <p class="text-lg font-bold text-color4">Passion for Cooking</p>
-                <div 
+                <div
                   class="bg-white rounded-3xl w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl flex items-center justify-center">
                   <span>90%</span>
                 </div>
@@ -430,7 +430,7 @@
                 <p class="text-lg font-bold text-color4">Leadership Skills</p>
                 <div
                   class="bg-white rounded-3xl flex items-center justify-center w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl">
-                  <span >80%</span>
+                  <span>80%</span>
                 </div>
               </div>
               <div class="space-y-5 flex flex-col items-center">
@@ -614,6 +614,7 @@
                     placeholder="Enter your message"
                     class="border-2 rounded-md focus:outline-none border-color4 w-full py-3 px-4"></textarea>
                   <input
+                    onclick="my_modal_5.showModal()"
                     type="submit"
                     value="Book A Table"
                     class="bg-color1 text-white mt-5 text-xl font-semibold hover:bg-color1 px-7 py-4 rounded-xl border-2 border-color1 cursor-pointer" />
@@ -630,11 +631,11 @@
           <span class="text-color1 block md:inline">Customers</span> Are Saying?
         </h3>
         <div class="mt-4 mb-8 flex justify-center items-center gap-5">
-          <div class="border-t border-[#6C757D] w-1/6 lg:w-1/12"></div>
+          <div class="border-t border-[#6C757D] w-1/6 lg:w-[7%]"></div>
           <p class="text-lg font-medium text-color3 text-center">
             Read real feedback from our valued patrons
           </p>
-          <div class="border-t border-[#6C757D] w-1/6 lg:w-1/12"></div>
+          <div class="border-t border-[#6C757D] w-1/6 lg:w-[7%]"></div>
         </div>
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
@@ -726,7 +727,7 @@
         </div>
       </section>
       <!-- upcoming events section -->
-      <section class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
+      <section id="events" class="mt-5 lg:mt-36 bg-[#F8F9FA] p-5 md:p-10 lg:p-20">
         <div class="max-w-screen-xl mx-auto">
           <h3 class="text-4xl font-bold libra text-color4 text-center">
             Upcoming <span class="text-color1">Events</span>
@@ -740,7 +741,7 @@
             <div class="relative mx-auto">
               <img src="./assets/images/event1.png" alt="" />
               <div
-                class="absolute bottom-0 w-full bg-linear-gradient event1-border-radius border-t-2 border-white">
+                class="absolute bottom-0 w-full bg-linear-gradient1 event1-border-radius border-t-2 border-white">
                 <div class="py-5 pl-12">
                   <h4 class="text-2xl font-bold text-white mb-4">
                     Sushi Rolling Workshop
@@ -757,7 +758,7 @@
             <div class="relative mx-auto">
               <img src="./assets/images/event2.png" alt="" />
               <div
-                class="absolute bottom-0 w-full bg-linear-gradient border-t-2 border-white">
+                class="absolute bottom-0 w-full bg-linear-gradient2 border-t-2 border-white">
                 <div class="py-5 pl-12">
                   <h4 class="text-2xl font-bold text-white mb-4">
                     Happy Hour Specials
@@ -774,7 +775,7 @@
             <div class="relative mx-auto">
               <img src="./assets/images/event3.png" alt="" />
               <div
-                class="absolute bottom-0 w-full bg-linear-gradient event3-border-radius border-t-2 border-white">
+                class="absolute bottom-0 w-full bg-linear-gradient3 event3-border-radius border-t-2 border-white">
                 <div class="py-5 pl-12">
                   <h4 class="text-2xl font-bold text-white mb-4">
                     Farm-To-Table Dinner
@@ -791,6 +792,32 @@
           </div>
         </div>
       </section>
+      <!-- Modal -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box h-[480px] my-auto">
+          <div class="flex flex-col justify-center items-center">
+            <img src="./assets/images/success.png" alt="" />
+            <h3 class="uppercase text-2xl font-bold text-color1 my-6">
+              Success
+            </h3>
+            <p class="text-xl text-color3 font-medium text-center">
+              Thank you for Booking a seat. We will give you a best service.
+            </p>
+            <p class="text-xl text-color3 font-normal text-center mt-6">
+              Shortly you will find a confirmation in your email.
+            </p>
+          </div>
+          <div class="modal-action justify-center">
+            <form method="dialog">
+              <button
+                onclick="location.reload()"
+                class="btn bg-color1 hover:bg-color1 font-semibold text-xl text-white px-20 rounded-full">
+                Continue
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
     <!-- main section end -->
 
@@ -800,7 +827,7 @@
       <section
         class="hero h-[540px]"
         style="background-image: url(./assets/images/newsletter.png)">
-        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-overlay bg-opacity-85"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="text-center">
             <h1 class="mb-4 text-4xl libra font-bold text-white">
@@ -808,9 +835,9 @@
             </h1>
             <p class="mb-12 text-white font-medium text-lg">
               Stay connected with us for exciting food updates! Be the first to
-              know about our new menu
-              <span class="inline lg:block"></span> additions, chef specials,
-              and upcoming events. Join our community for delicious experiences.
+              know about our new menu additions,
+              <span class="inline lg:block"></span>chef specials, and upcoming
+              events. Join our community for delicious experiences.
             </p>
             <div id="input-field" class="relative">
               <input
@@ -822,19 +849,19 @@
                 class="text-lg py-4 text-white bg-inherit border-2 border-white rounded-full pl-5 focus:outline-none w-full md:w-[55%]" />
               <input
                 type="submit"
-                class="btn hover:bg-white text-xl text-color4 font-semibold bg-color bg-white px-4 rounded-full absolute right-2 top-2 md:right-[174px] lg:right-[183px] md:top-[8px] lg:top-[7px]"
+                class="btn hover:bg-white text-xl text-color4 font-semibold bg-color bg-white px-4 rounded-full absolute right-2 top-2 md:right-[174px] lg:right-[199px] md:top-[8px] lg:top-[7px]"
                 value="Subscribe" />
             </div>
           </div>
         </div>
       </section>
       <!-- footer -->
-      <section
+      <section id="footer"
         class="bg-[#0D1201] max-w-screen-2xl mx-auto p-5 md:p-10 lg:p-20">
         <div class="footer max-w-screen-xl mx-auto">
           <aside class="text-white">
             <h3 class="text-3xl font-bold">
-              <span class="text-color1">Ember</span> Grille
+              <span class="text-color1 libra">Ember</span> Grille
             </h3>
             <p class="mt-4 mb-6 text-base font-medium">
               Taste the Difference Elevating
@@ -882,7 +909,7 @@
             <a class="link link-hover font-medium text-base">Acceptability</a>
           </nav>
           <nav class="text-white">
-            <h6 class="libra text-xl font-bold mb-6">our menu</h6>
+            <h6 class="libra text-xl font-bold mb-6">Our menu</h6>
             <a class="link link-hover font-medium text-base mb-1">Special</a>
             <a class="link link-hover font-medium text-base mb-1">Popular</a>
             <a class="link link-hover font-medium text-base mb-1">Categories</a>
