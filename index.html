@@ -90,7 +90,13 @@
           </div>
           <div class="navbar-end space-x-7">
             <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
-            <i class="fa-solid fa-bag-shopping text-xl cursor-pointer"></i>
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Vector1.svg"
+                class="cursor-pointer"
+                alt="" />
+                <sup class="bg-color1 text-white font-semibold text-xs rounded-full w-4 h-4 flex items-center justify-center">0</sup>
+            </div>
           </div>
         </div>
       </section>
@@ -400,37 +406,39 @@
               Chef Smith brings a passion for innovation and a dedication to
               quality.
             </p>
-            <div class="flex flex-col md:flex-row justify-around my-10 gap-5">
-              <div class="space-y-5">
+            <div
+              class="flex flex-col md:flex-row justify-between my-10 gap-5 w-full lg:w-[90%]">
+              <div class="space-y-5 flex flex-col items-center">
                 <p class="text-lg font-bold text-color4">Passion for Cooking</p>
                 <div
-                  class="bg-white rounded-3xl p-10 text-xl font-bold text-color4 text-center shadow-xl">
-                  90%
+                  class="bg-white rounded-3xl w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl flex items-center justify-center">
+                  <span>90%</span>
                 </div>
               </div>
-              <div class="space-y-5">
+              <div class="space-y-5 flex flex-col items-center">
                 <p class="text-lg font-bold text-color4">Leadership Skills</p>
                 <div
-                  class="bg-white rounded-3xl p-10 text-xl font-bold text-color4 text-center shadow-xl">
-                  80%
+                  class="bg-white rounded-3xl flex items-center justify-center w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl">
+                  <span>80%</span>
                 </div>
               </div>
-              <div class="space-y-5">
+              <div class="space-y-5 flex flex-col items-center">
                 <p class="text-lg font-bold text-color4">Continuous Learning</p>
                 <div
-                  class="bg-white rounded-3xl p-10 text-xl font-bold text-color4 text-center shadow-xl">
-                  100%
+                  class="bg-white rounded-3xl flex items-center justify-center w-32 h-32 text-xl font-bold text-color4 text-center shadow-xl">
+                  <span>100%</span>
                 </div>
               </div>
             </div>
-            <div class="md:space-x-5">
+            <div class="md:space-x-5 flex mt-10">
               <button
-                class="bg-color1 text-white mt-10 text-xl font-semibold hover:bg-color1 px-7 py-4 rounded-xl border-2 border-color1">
+                class="bg-color1 text-white text-xl font-semibold hover:bg-color1 px-7 py-4 rounded-xl border-2 border-color1">
                 Contact Him
               </button>
               <button
-                class="cursor-pointer text-xl font-semibold text-color4 border-2 border-color4 rounded-xl px-7 py-4 mt-8">
-                Watch Now <i class="ml-3 fa-solid fa-video"></i>
+                class="cursor-pointer text-xl font-semibold text-color4 border-2 border-color4 rounded-xl px-7 py-4 flex items-center gap-3">
+                <span>Watch Now</span>
+                <img src="./assets/images/Vector.svg" alt="" />
               </button>
             </div>
           </div>
@@ -605,15 +613,22 @@
       <!-- customers review section -->
       <section class="max-w-screen-2xl mx-auto p-5 lg:p-0 mt-5 lg:mt-20">
         <h3 class="libra font-bold text-4xl text-color4 text-center">
-          What Our <span class="text-color1">Customers</span> Are Saying?
+          What Our
+          <span class="text-color1 block md:inline">Customers</span> Are Saying?
         </h3>
-        <p class="text-lg font-medium text-color3 text-center mt-4 mb-8">
-          Read real feedback from our valued patrons
-        </p>
+        <div class="mt-4 mb-8 flex justify-center items-center gap-5">
+          <div class="border-t border-[#6C757D] w-1/6 lg:w-1/12"></div>
+          <p class="text-lg font-medium text-color3 text-center">
+            Read real feedback from our valued patrons
+          </p>
+          <div class="border-t border-[#6C757D] w-1/6 lg:w-1/12"></div>
+        </div>
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
             <div class="flex flex-col lg:flex-row justify-between items-center">
-              <img src="./assets/images/customer.png" class="" />
+              <img
+                src="./assets/images/customer1.png"
+                class="w-full lg:w-[60%]" />
               <div>
                 <h4
                   class="text-color1 text-4xl font-bold text-center lg:text-left">
@@ -712,7 +727,7 @@
             <div class="relative mx-auto">
               <img src="./assets/images/event1.png" alt="" />
               <div
-                class="absolute bottom-0 w-full bg-linear-gradient event1-border-radius">
+                class="absolute bottom-0 w-full bg-linear-gradient event1-border-radius border-t-2 border-white">
                 <div class="py-5 pl-12">
                   <h4 class="text-2xl font-bold text-white mb-4">
                     Sushi Rolling Workshop
@@ -728,16 +743,17 @@
             </div>
             <div class="relative mx-auto">
               <img src="./assets/images/event2.png" alt="" />
-              <div class="absolute bottom-0 w-full bg-linear-gradient">
+              <div
+                class="absolute bottom-0 w-full bg-linear-gradient border-t-2 border-white">
                 <div class="py-5 pl-12">
                   <h4 class="text-2xl font-bold text-white mb-4">
-                    Sushi Rolling Workshop
+                    Happy Hour Specials
                   </h4>
                   <p class="text-lg text-white mb-1 font-semibold">
-                    Date: April 19, 2024
+                    Date: May 16, 2024
                   </p>
                   <p class="text-lg text-white font-semibold">
-                    Time: 6:30 PM - 8:30 PM
+                    Time: 7:30 PM - 8:30 PM
                   </p>
                 </div>
               </div>
@@ -745,16 +761,16 @@
             <div class="relative mx-auto">
               <img src="./assets/images/event3.png" alt="" />
               <div
-                class="absolute bottom-0 w-full bg-linear-gradient event3-border-radius">
+                class="absolute bottom-0 w-full bg-linear-gradient event3-border-radius border-t-2 border-white">
                 <div class="py-5 pl-12">
                   <h4 class="text-2xl font-bold text-white mb-4">
-                    Sushi Rolling Workshop
+                    Farm-To-Table Dinner
                   </h4>
                   <p class="text-lg text-white mb-1 font-semibold">
-                    Date: April 19, 2024
+                    Date: June 21, 2024
                   </p>
                   <p class="text-lg text-white font-semibold">
-                    Time: 6:30 PM - 8:30 PM
+                    Time: 5:30 PM - 7:30 PM
                   </p>
                 </div>
               </div>
